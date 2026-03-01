@@ -115,14 +115,60 @@ a {
     color: #495057;
 }
 
-/* WEB SIMULATION */
+/* =========================================
+   WEB VIEW SIMULATION (RESPONSIVE)
+   ========================================= */
+
+/* 1. MOBILE DEFAULT (Base Styles) */
+/* Applies to screens < 768px */
 .container-lg {
-    max-width: 25cm;
-    min-height: 29.7cm;
-    margin: 3rem auto;
     background: white;
-    padding: 6rem !important;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    
+    /* Full width, no gray margins */
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    
+    /* Tighter padding for phones so text doesn't get squashed */
+    padding: 1.5rem !important; 
+}
+
+/* 2. TABLET (md) - 768px and up */
+@media (min-width: 768px) {
+    .container-lg {
+        /* Introduce the "Card" look */
+        margin: 2rem auto;
+        max-width: 95%;
+        min-height: auto;
+        border-radius: 4px;
+        
+        /* Medium padding */
+        padding: 3rem !important; 
+    }
+}
+
+/* 3. DESKTOP (lg) - 992px and up */
+@media (min-width: 992px) {
+    .container-lg {
+        max-width: 25cm;
+        min-height: 29.7cm;
+        margin: 3rem auto;
+        padding: 6rem !important; 
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+}
+
+/* 4. RESPONSIVE TYPOGRAPHY */
+/* Shrink the Name slightly on very small phones so it doesn't wrap */
+@media (max-width: 576px) {
+    .header-name {
+        font-size: 2rem;
+    }
+    .header-title {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen {
