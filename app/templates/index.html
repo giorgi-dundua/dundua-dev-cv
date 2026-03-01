@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cv.basics.name }}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/profile.png') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="web-gray-bg">
+
+    <div class="container-lg my-4 p-5 bg-white shadow-sm rounded">
+        
+        <!-- HEADER -->
+        <header class="pb-3 mb-3">
+            <div class="row align-items-center">
+                <div class="col-lg-3 print-col-3 text-center text-lg-start mb-2 mb-md-0">
+                    <img src="{{ url_for('static', filename='img/profile.png') }}" alt="{{ cv.basics.name }}" class="rounded-circle profile-img">
+                </div>
+                <div class="col-lg-9 print-col-9 text-lg-end">
+                    <h1 class="header-name">{{ cv.basics.name }}</h1>
+                    <h3 class="header-title">{{ cv.basics.label }}</h3>
+                    
+                    <div class="header-meta d-flex flex-wrap justify-content-lg-end">
+                        <span class="me-3"><i class="fas fa-map-marker-alt me-1 text-brand"></i> {{ cv.basics.location.city }}, {{ cv.basics.location.countryCode }}</span>
+                        <span class="me-3"><i class="fas fa-envelope me-1 text-brand"></i> {{ cv.basics.email }}</span>
+                        {% if cv.basics.phone %}
+                        <span class="text-nowrap"><i class="fas fa-phone me-1 text-brand"></i> {{ cv.basics.phone }}</span>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="header-links">
+                        {% for profile in cv.basics.profiles %}
+                            <a href="{{ profile.url }}" class="text-decoration-none me-3 text-dark" target="_blank">
+                                <i class="fab fa-{{ profile.network|lower }} me-1"></i> {{ profile.network }}
+                            </a>
+                        {% endfor %}
+                        <a href="{{ cv.basics.url }}" class="text-decoration-none text-dark" target="_blank">
+                            <i class="fas fa-globe me-1"></i> Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="mb-4">
+            <h5 class="cv-section-title">Professional Summary</h5>
+            {% for paragraph in cv.basics.summary %}
+                <p class="cv-summary-text">{{ paragraph | prevent_orphan}}</p>
+            {% endfor %}
+        </section>
+
+        <!-- SKILLS -->
+        <section class="cv-section">
+            <h5 class="cv-section-title">Skills</h5>
+            {% for skill_group in cv.skills %}
+            <div class="mb-1 break-avoid">
+                <h6 class="cv-skills-category">{{ skill_group.name }}</h6>
+                <div class="cv-skills-text">
+                    {{ skill_group.keywords|join(' • ') }}
+                </div>
+            </div>
+            {% endfor %}            
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="cv-section">
+            <h5 class="cv-section-title">Projects</h5>
+            {% for project in cv.projects %}
+            <div class="cv-entry">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <h6 class="cv-entry-title">{{ project.name }}</h6>
+                    {% if project.url %}
+                    <a href="{{ project.url }}" class="small text-brand fw-bold" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    {% endif %}
+                </div>
+                
+                <div class="cv-entry-subtitle">
+                    {{ project.keywords|join(' • ') }}
+                </div>
+                
+                <ul class="highlight-list">
+                    {% for highlight in project.highlights %}
+                    <li>{{ highlight | prevent_orphan }}</li>
+                    {% endfor %}
+                </ul>                
+            </div>
+            {% endfor %}
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section class="cv-section">
+            <h5 class="cv-section-title">Work Experience</h5>
+            {% for job in cv.work %}
+            <div class="cv-entry">
+                <div class="cv-entry-header d-flex flex-column flex-md-row justify-content-between align-items-md-baseline">
+                    <h6 class="cv-entry-title">{{ job.position }}</h6>
+                    <span class="cv-entry-date">{{ job.startDate|format_date }} – {{ job.endDate|format_date }}</span>
+                </div>
+                
+                <div class="cv-entry-subtitle">
+                    {{ job.name }} <span class="text-muted fw-normal">| {{ job.location }}</span>
+                </div>
+                                
+                <ul class="highlight-list">
+                    {% for highlight in job.highlights %}
+                    <li>{{ highlight | prevent_orphan }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="cv-section">
+            <h5 class="cv-section-title">Education</h5>
+            {% for edu in cv.education %}
+            <div class="cv-entry">
+                <div class="cv-entry-header d-flex flex-column flex-md-row justify-content-between align-items-md-baseline">
+                    <h6 class="cv-entry-title">{{ edu.institution }}</h6>
+                    <span class="cv-entry-date">{{ edu.startDate }} – {{ edu.endDate }}</span>
+                </div>                
+                <div class="cv-entry-subtitle">{{ edu.area }}</div>                                
+                <ul class="highlight-list">
+                    {% for highlight in edu.highlights %}
+                    <li>{{ highlight | prevent_orphan }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </section>     
+
+        <!-- FOOTER -->
+        <footer class="pt-3 text-center text-muted small no-print">
+            <p>Generated from JSON via Flask & Docker. <a href="https://github.com/giorgi-dundua/dundua-dev-cv" target="_blank">View Source Code</a>.</p>
+            <button onclick="window.print()" class="btn btn-outline-secondary btn-sm"><i class="fas fa-download me-2"></i>Save as PDF</button>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

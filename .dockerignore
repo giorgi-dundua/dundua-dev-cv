@@ -1,0 +1,13 @@
+# Security
+secrets.json
+.env
+
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+.venv
+venv

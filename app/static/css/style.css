@@ -1,0 +1,289 @@
+/* GLOBAL VARIABLES */
+:root {
+    --brand-color: #8055a2;
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --base-line-height: 1.35;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: var(--base-line-height);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* TYPOGRAPHY DEFAULTS */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark);
+    margin-bottom: 0;
+}
+
+.text-brand {
+    color: var(--brand-color) !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* AVATAR */
+.profile-img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+.header-name {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.header-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--brand-color);
+    margin-bottom: 0.5rem;
+}
+
+.header-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.header-links {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* =========================================
+   CV COMPONENTS (WEB VIEW)
+   ========================================= */
+.cv-section {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cv-section-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.cv-entry {
+    margin-bottom: 0.75rem;
+    break-inside: avoid;
+}
+
+.cv-skills-category,
+.cv-entry-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.cv-entry-subtitle,
+.cv-entry-date {
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: var(--brand-color);
+}
+
+.cv-summary-text {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-list {
+    padding-left: 1.2rem;
+}
+
+.cv-skills-text,
+.highlight-list li {
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+/* WEB SIMULATION */
+.container-lg {
+    max-width: 25cm;
+    min-height: 29.7cm;
+    margin: 3rem auto;
+    background: white;
+    padding: 6rem !important;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+@media screen {
+    .web-gray-bg {
+        background-color: #f8f9fa !important;
+    }
+}
+
+/* =========================================
+   PRINT OPTIMIZATION
+   ========================================= */
+@media print {
+    * {
+        /* Forces the PDF printer to use exact pixel/point positions */
+        text-rendering: geometricPrecision !important;
+        -webkit-font-smoothing: antialiased !important;
+        /* Prevents the browser from adding extra "invisible" width to bold text */
+        font-variant-ligatures: none !important;
+    }
+    @page {
+        margin: 2cm;
+        size: A4;
+    }
+
+    html,
+    body {
+        background-color: white !important;
+        color: black !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 9.5pt !important;
+        line-height: 1.15 !important;
+        letter-spacing: 0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .container-lg {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .no-print,
+    footer,
+    .btn {
+        display: none !important;
+    }
+
+    /* TYPOGRAPHY RE-MAPPING */
+    .header-name {
+        font-size: 22pt !important;
+        margin-bottom: 2px !important;
+    }
+
+    .header-title {
+        font-size: 12pt !important;
+        margin-bottom: 4px !important;
+    }
+
+    .header-meta,
+    .header-links {
+        font-size: 8.5pt !important;
+        line-height: 1.2 !important;
+    }
+
+    .cv-section-title {
+        font-size: 13pt !important;
+        margin-bottom: 6px !important;
+        margin-top: 4px !important;
+    }
+
+    .cv-skills-category,
+    .cv-entry-title {
+        font-size: 11pt !important;
+    }
+
+    .cv-entry-subtitle,
+    .cv-entry-date {
+        font-size: 11pt !important;
+        margin-bottom: 2px !important;
+    }
+
+    .cv-summary-text {
+        font-size: 10pt !important;
+        line-height: 1.2 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .cv-skills-text,
+    .highlight-list li {
+        font-size: 9.5pt !important;
+        color: black !important;
+    }
+
+    /* Target the text blocks specifically */
+    .cv-summary-text, 
+    .highlight-list li {
+        text-wrap: pretty;        
+        word-spacing: -1px !important;         
+        letter-spacing: -0.1px !important;
+    }
+
+    /* LAYOUT & SPACING */
+    .cv-section {
+        border-top: 1px solid #ddd !important;
+        padding-top: 8px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .cv-entry {
+        margin-bottom: 8px !important;
+    }
+
+    .highlight-list {
+        margin-bottom: 4px !important;
+    }
+
+    .highlight-list li {
+        margin-bottom: 2px !important;
+    }
+
+    .print-col-3 {
+        width: 25% !important;
+        flex: 0 0 25% !important;
+    }
+
+    .print-col-9 {
+        width: 75% !important;
+        flex: 0 0 75% !important;
+        text-align: end !important;
+    }
+
+    .header-meta {
+        display: flex !important;
+        justify-content: flex-end !important;
+        width: 100% !important;
+    }
+
+    .header-links {
+        display: block !important;
+        text-align: end !important;
+    }
+
+    .cv-entry-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: baseline !important;
+        flex-direction: row !important;
+    }
+
+    section:first-of-type {
+        border-top: none !important;
+        padding-top: 0 !important;
+    }
+
+    .cv-section-title {
+        page-break-after: avoid !important;
+    }
+
+    .cv-entry {
+        page-break-inside: avoid !important;
+    }
+}

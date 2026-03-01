@@ -1,0 +1,167 @@
+{
+  "basics": {
+    "name": "Giorgi Dundua",
+    "label": "Software Engineer (Backend/DevOps)",
+    "image": "app/static/img/profile.png",
+    "email": "giorgi@dundua.dev",
+    "phone": "Available upon request",
+    "url": "https://dundua.dev",
+    "location": {
+      "city": "Gothenburg",
+      "countryCode": "SE",
+      "region": "Västra Götaland"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/giorgidundua"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/giorgi-dundua"
+      }
+    ],
+    "summary": [
+      "Software Engineer and Chalmers alumni pivoting from Technical Delivery to hands-on DevOps & Python roles. Experience in Dockerized Flask applications, GitHub Actions CI/CD pipelines, and Pandas data workflows. Combines engineering discipline with business acumen to deliver production-grade solutions"
+    ]
+  },
+  "skills": [
+    {
+      "name": "Programming & Scripting",
+      "keywords": ["Python", "SQL", "basic JavaScript"]
+    },
+    {
+      "name": "Web & Backend",
+      "keywords": ["Flask", "Jinja2", "RESTful APIs", "HTML5", "CSS3", "Bootstrap"]
+
+    },
+    {
+      "name": "DevOps & Infrastructure",
+      "keywords": ["Docker", "GitHub Actions", "CI/CD", "Fly.io", "basic Linux", "environment‑based configuration and secrets management"]
+    },
+    {
+      "name": "Data Analysis",
+      "keywords": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Pandera", "Google Colab"]
+    },
+    {
+      "name": "Tools & Methodologies",
+      "keywords": ["Git", "GitHub", "Agile/Scrum", "Teamwork", "knowledge base authoring", "stakeholder communication"]
+    },
+    {
+      "name": "Languages",
+      "keywords": ["English - Native/Bilingual", "Georgian - Native", "Swedish - Elementary (SFI C)"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Data Platform",
+      "highlights": [
+        "Architected a stateless, idempotent DAG pipeline to ingest and normalize heterogeneous health telemetry (API & CSV)",
+        "Implemented Atomic I/O patterns (Write-Ahead Log) and Content-Addressable Caching to ensure data integrity and zero redundant compute",
+        "Engineered a distributed state synchronization system using Google Drive as a data lake, enabling stateless execution across Docker and GitHub Actions",
+        "Deployed a dual-mode Streamlit dashboard via CI/CD pipelines, featuring secure authentication and automated mock data generation for public demos"
+      ],
+      "keywords": ["Python", "Docker", "GitHub Actions", "SQLite", "Pydantic", "Streamlit", "Fly.io"],
+      "url": "https://github.com/giorgi-dundua/personal-data-platform"
+    },
+    {
+      "name": "NordTech Corporate Platform",
+      "highlights": [
+        "Containerized a production Flask application using multi-stage Docker builds, optimizing image size for rapid deployment",
+        "Architected a CI/CD pipeline via GitHub Actions for automated, zero-downtime deployments to Fly.io microVMs",
+        "Refactored legacy code into the Application Factory Pattern, enforcing strict separation of configuration and secrets (12-Factor App)",
+        "Engineered asynchronous background threading for non-blocking email delivery, decoupling I/O operations from the request cycle"
+      ],
+      "keywords": ["Python", "Flask", "Docker", "GitHub Actions", "Gunicorn"],
+      "url": "https://github.com/giorgi-dundua/nordtech-flask-site"
+    }
+  ],
+  "work": [
+    {
+      "name": "Sabbatical",
+      "position": "Independent Software Engineer",
+      "location": "Gothenburg",
+      "startDate": "2025-06-01",
+      "endDate": "Present",
+      "highlights": [
+        "Relocated to Sweden and dedicated full-time effort to updating technical skills from legacy stacks to modern Cloud/DevOps patterns",
+        "Focus Areas: Python (Pandas/Flask), Containerization (Docker), and CI/CD Automation (GitHub Actions)",
+        "Key Achievement: Built and deployed a corporate platform and a data pipeline to demonstrate proficiency in modern software lifecycles (SDLC)"
+      ]
+    },
+    {
+      "name": "NordTech Solutions",
+      "position": "Technical Delivery Lead",
+      "location": "Tbilisi & Oslo",
+      "startDate": "2021-01-01",
+      "endDate": "2025-05-31",
+      "highlights": [
+        "Led end-to-end delivery of web platforms, translating client requirements into technical tasks and schedules",
+        "Defined system scope, team composition, and delivery timelines with CTO; created tasks in Teamwork",
+        "Oversaw quality through manual testing and Selenium automation; managed delivery risks and incidents",
+        "Coordinated weekly client meetings, commercial negotiations, and technical hiring (CV screening, interviews)",
+        "Travelin.ai: Distributed tasks, reviewed deliverables, led QA/release for corporate travel platform",
+        "Vavisjon.no: Tasked Python/React/DevOps team, tested/reviewed user management system delivery"
+      ]
+    },
+    {
+      "name": "TIBCO Software Inc.",
+      "position": "Software Support Engineer",
+      "location": "Gothenburg",
+      "startDate": "2018-04-01",
+      "endDate": "2021-01-31",
+      "highlights": [
+        "Handled complex support cases for TIBCO Spotfire, debugging issues through log analysis, local reproduction, and collaboration with engineering",
+        "Delivered solutions and effective workarounds for enterprise customers, consistently meeting SLA expectations and improving customer satisfaction",
+        "Contributed to self‑service support by writing and reviewing knowledge base articles and providing solutions in the user community",
+        "Worked closely with cross‑functional teams to improve debugging processes and address recurring product issues"
+      ]
+    },
+    {
+      "name": "German Butcher LTD",
+      "position": "Freelance Software Engineer",
+      "location": "Remote (Göteborg/Tbilisi)",
+      "startDate": "2017-06-01",
+      "endDate": "2018-03-31",
+      "highlights": [
+        "Worked as a junior backend developer on a custom internal system for production, inventory, budgeting, and reporting",
+        "Implemented backend features and business logic under guidance from senior developers, gaining practical experience with real‑world enterprise workflows",
+        "Assisted with data handling and basic reporting, improving visibility into production and cost structures"
+      ]
+    },
+    {
+      "name": "Gullinbursti LTD",
+      "position": "Business Developer",
+      "location": "Remote (Göteborg/Tbilisi)",
+      "startDate": "2016-06-01",
+      "endDate": "2017-05-31",
+      "highlights": [
+        "Built and managed supplier relationships for food production inputs across the EU, focusing on cross‑border imports into Georgia",
+        "Conducted supplier research, outreach, and commercial negotiations, coordinating with freight forwarders and local manufacturers",
+        "Managed day‑to‑day operations related to deliveries, pricing, and basic financial follow‑up"
+      ] 
+    }
+  ],  
+  "education": [
+    {
+      "institution": "Chalmers University of Technology & University of Gothenburg",
+      "area": "BSc Software Engineering and Management",
+      "startDate": "2013",
+      "endDate": "2016",
+      "highlights": [
+        "Joint degree with a strong focus on long‑running industrial projects covering the full software development lifecycle",
+        "Core areas: software architecture (distributed and embedded), software quality and testing, and process improvement",
+        "Developed strong skills at the intersection of technical engineering and change management in software organisations"
+      ]
+    },
+    {
+      "institution": "School of Business, Economics and Law, University of Gothenburg",
+      "area": "MSc Finance",
+      "startDate": "2008",
+      "endDate": "2011",
+      "highlights": [
+        "Studied corporate finance, financial markets, and quantitative analysis, building complementary analytical and business skills"
+      ]
+    }
+  ]  
+}
