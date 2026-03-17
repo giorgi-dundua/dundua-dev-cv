@@ -22,7 +22,7 @@
       }
     ],
     "summary": [
-      "Software Engineer and Chalmers alumni pivoting from Technical Delivery to hands-on DevOps & Python roles. Experience in Dockerized Flask applications, GitHub Actions CI/CD pipelines, and Pandas data workflows. Combines engineering discipline with business acumen to deliver production-grade solutions"
+      "Software Engineer with hands-on project experience in Python backend development and DevOps tooling (Docker, GitHub Actions, Fly.io), and a professional background spanning software delivery, QA, and technical support. Chalmers Software Engineering alumnus targeting backend and infrastructure roles"
     ]
   },
   "skills": [
@@ -32,7 +32,7 @@
     },
     {
       "name": "Web & Backend",
-      "keywords": ["Flask", "Jinja2", "RESTful APIs", "HTML5", "CSS3", "Bootstrap"]
+      "keywords": ["Flask", "Jinja2", "RESTful APIs", "HTML5", "CSS3", "Bootstrap", "Pydantic"]
 
     },
     {
@@ -41,11 +41,11 @@
     },
     {
       "name": "Data Analysis",
-      "keywords": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Pandera", "Google Colab"]
+      "keywords": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Pandera"]
     },
     {
       "name": "Tools & Methodologies",
-      "keywords": ["Git", "GitHub", "Agile/Scrum", "Teamwork", "knowledge base authoring", "stakeholder communication"]
+      "keywords": ["Git", "GitHub", "Agile/Scrum", "Teamwork", "stakeholder communication"]
     },
     {
       "name": "Languages",
@@ -57,9 +57,9 @@
       "name": "Personal Data Platform",
       "highlights": [
         "Architected a stateless, idempotent DAG pipeline to ingest and normalize heterogeneous health telemetry (API & CSV)",
-        "Implemented Atomic I/O patterns (Write-Ahead Log) and Content-Addressable Caching to ensure data integrity and zero redundant compute",
-        "Engineered a distributed state synchronization system using Google Drive as a data lake, enabling stateless execution across Docker and GitHub Actions",
-        "Deployed a dual-mode Streamlit dashboard via CI/CD pipelines, featuring secure authentication and automated mock data generation for public demos"
+        "Implemented Atomic I/O patterns (Write-Ahead Log) and Content-Addressable caching to ensure data integrity and eliminate redundant compute",
+        "Engineered portable execution state across local Docker and GitHub Actions environments using Google Drive as a shared persistent store",
+        "Deployed a dual-mode Streamlit dashboard via CI/CD pipeline with secure authentication and automated mock data generation for public demos"
       ],
       "keywords": ["Python", "Docker", "GitHub Actions", "SQLite", "Pydantic", "Streamlit", "Fly.io"],
       "url": "https://github.com/giorgi-dundua/personal-data-platform"
@@ -67,10 +67,10 @@
     {
       "name": "NordTech Corporate Platform",
       "highlights": [
-        "Containerized a production Flask application using multi-stage Docker builds, optimizing image size for rapid deployment",
-        "Architected a CI/CD pipeline via GitHub Actions for automated, zero-downtime deployments to Fly.io microVMs",
-        "Refactored legacy code into the Application Factory Pattern, enforcing strict separation of configuration and secrets (12-Factor App)",
-        "Engineered asynchronous background threading for non-blocking email delivery, decoupling I/O operations from the request cycle"
+        "Containerized a production Flask application utilizing slim base images and cache-optimized layer caching, reducing image footprint by 85% for rapid deployment",
+        "Configured rolling deployments via Fly.io with GitHub Actions CI/CD pipeline for automated, zero-downtime releases",
+        "Refactored legacy codebase into the Application Factory Pattern, enforcing strict separation of configuration and secrets per 12-Factor App principles",
+        "Engineered asynchronous background threading for non-blocking email delivery, decoupling I/O from the request cycle"
       ],
       "keywords": ["Python", "Flask", "Docker", "GitHub Actions", "Gunicorn"],
       "url": "https://github.com/giorgi-dundua/nordtech-flask-site"
@@ -78,15 +78,15 @@
   ],
   "work": [
     {
-      "name": "Sabbatical",
+      "name": "Career Development",
       "position": "Independent Software Engineer",
       "location": "Gothenburg",
       "startDate": "2025-06-01",
       "endDate": "Present",
       "highlights": [
-        "Relocated to Sweden and dedicated full-time effort to updating technical skills from legacy stacks to modern Cloud/DevOps patterns",
-        "Focus Areas: Python (Pandas/Flask), Containerization (Docker), and CI/CD Automation (GitHub Actions)",
-        "Key Achievement: Built and deployed a corporate platform and a data pipeline to demonstrate proficiency in modern software lifecycles (SDLC)"
+        "Engineered and deployed a production-grade corporate web platform in Python using Flask, multi-stage Docker builds, and Fly.io microVMs",
+        "Architected an idempotent DAG data pipeline for health telemetry utilizing SQLite, Pydantic, and GitHub Actions CI/CD",
+        "Building Kubernetes expertise through structured curriculum covering containerization, orchestration, and cloud-native patterns"
       ]
     },
     {
@@ -96,12 +96,11 @@
       "startDate": "2021-01-01",
       "endDate": "2025-05-31",
       "highlights": [
-        "Led end-to-end delivery of web platforms, translating client requirements into technical tasks and schedules",
-        "Defined system scope, team composition, and delivery timelines with CTO; created tasks in Teamwork",
-        "Oversaw quality through manual testing and Selenium automation; managed delivery risks and incidents",
-        "Coordinated weekly client meetings, commercial negotiations, and technical hiring (CV screening, interviews)",
-        "Travelin.ai: Distributed tasks, reviewed deliverables, led QA/release for corporate travel platform",
-        "Vavisjon.no: Tasked Python/React/DevOps team, tested/reviewed user management system delivery"
+        "Worked with CTO and clients to define system scope, team composition, and technical estimates; broke requirements into structured task breakdowns for delivery teams",
+        "Oversaw QA across client platforms — applied Selenium automation selectively where test stability justified it; used manual testing for UI-heavy and context-dependent flows",
+        "Managed delivery risks, incidents, and client communications across full project lifecycles; coordinated commercial negotiations, and technical hiring (CV screening, interviews)",
+        "Travelin.ai: multi-module booking and cost reporting platform for corporate travel; led QA strategy, task distribution, and release coordination",
+        "Vavisjon.no: resource management monitoring platform for Norwegian municipalities; tasked Python/React/DevOps team, reviewed deliverables and managed delivery"
       ]
     },
     {
