@@ -59,7 +59,7 @@
         "Architected a stateless, idempotent DAG pipeline to ingest and normalize heterogeneous health telemetry (API & CSV)",
         "Implemented Atomic I/O patterns (Write-Ahead Log) and Content-Addressable caching to ensure data integrity and eliminate redundant compute",
         "Engineered portable execution state across local Docker and GitHub Actions environments using Google Drive as a shared persistent store",
-        "Deployed a dual-mode Streamlit dashboard via CI/CD pipeline with secure authentication and automated mock data generation for public demos"
+        "Deployed a dual-mode Streamlit dashboard via multi-stage Docker build and CI/CD pipeline, with secure authentication and automated mock data generation for public demos"
       ],
       "keywords": ["Python", "Docker", "GitHub Actions", "SQLite", "Pydantic", "Streamlit", "Fly.io"],
       "url": "https://github.com/giorgi-dundua/personal-data-platform"
@@ -78,8 +78,8 @@
   ],
   "work": [
     {
-      "name": "Career Development",
-      "position": "Independent Software Engineer",
+      "name": "Independent",
+      "position": "Software Engineer — Python & DevOps",
       "location": "Gothenburg",
       "startDate": "2025-06-01",
       "endDate": "Present",
@@ -110,10 +110,9 @@
       "startDate": "2018-04-01",
       "endDate": "2021-01-31",
       "highlights": [
-        "Handled complex support cases for TIBCO Spotfire, debugging issues through log analysis, local reproduction, and collaboration with engineering",
-        "Delivered solutions and effective workarounds for enterprise customers, consistently meeting SLA expectations and improving customer satisfaction",
-        "Contributed to self‑service support by writing and reviewing knowledge base articles and providing solutions in the user community",
-        "Worked closely with cross‑functional teams to improve debugging processes and address recurring product issues"
+        "Supported enterprise multi-tier Spotfire deployments: Java/Tomcat server, .NET Node Manager services, Oracle/MSSQL backends across Windows and Linux — including clustering, load balancing, and high-memory Web Player nodes",
+        "Diagnosed complex production issues through server log analysis, local environment reproduction, and direct collaboration with the Spotfire development team in Gothenburg — covering memory leaks, SSO/Kerberos, SSL/TLS, and infrastructure misconfigurations",
+        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; on track for Senior SSE promotion prior to collective department elimination by US head office"
       ]
     },
     {
