@@ -84,7 +84,7 @@
       "startDate": "2025-06-01",
       "endDate": "Present",
       "highlights": [
-        "Engineered and deployed a production-grade corporate web platform in Python using Flask, multi-stage Docker builds, and Fly.io microVMs",
+        "Engineered and deployed a corporate web platform in Python using Flask, multi-stage Docker builds, and Fly.io microVMs",
         "Architected an idempotent DAG data pipeline for health telemetry utilizing SQLite, Pydantic, and GitHub Actions CI/CD",
         "Building Kubernetes expertise through structured curriculum covering containerization, orchestration, and cloud-native patterns"
       ]
@@ -97,10 +97,11 @@
       "endDate": "2025-05-31",
       "highlights": [
         "Worked with CTO and clients to define system scope, team composition, and technical estimates; broke requirements into structured task breakdowns for delivery teams",
-        "Oversaw QA across client platforms — applied Selenium automation selectively where test stability justified it; used manual testing for UI-heavy and context-dependent flows",
-        "Managed delivery risks, incidents, and client communications across full project lifecycles; coordinated commercial negotiations, and technical hiring (CV screening, interviews)",
-        "Travelin.ai: multi-module booking and cost reporting platform for corporate travel; led QA strategy, task distribution, and release coordination",
-        "Vavisjon.no: resource management monitoring platform for Norwegian municipalities; tasked Python/React/DevOps team, reviewed deliverables and managed delivery"
+        "Led QA across client platforms — applied Selenium automation selectively where test stability justified it; used manual testing for UI-heavy and context-dependent flows",
+        "Managed delivery risks, incidents, and client communications across full project lifecycles",
+        "Coordinated commercial negotiations and supported technical hiring",
+        "Travelin.ai: multi-module booking and cost reporting platform for corporate travel — delivered to production; led QA strategy, task distribution, and release coordination",
+        "Vavisjon.no: resource management monitoring platform for Norwegian municipalities — delivered to production; tasked Python/React/DevOps team, reviewed deliverables and managed delivery"
       ]
     },
     {
@@ -112,7 +113,7 @@
       "highlights": [
         "Supported enterprise multi-tier Spotfire deployments: Java/Tomcat server, .NET Node Manager services, Oracle/MSSQL backends across Windows and Linux — including clustering, load balancing, and high-memory Web Player nodes",
         "Diagnosed complex production issues through server log analysis, local environment reproduction, and direct collaboration with the Spotfire development team in Gothenburg — covering memory leaks, SSO/Kerberos, SSL/TLS, and infrastructure misconfigurations",
-        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; on track for Senior SSE promotion prior to collective department elimination by US head office"
+        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; progressing toward Senior SSE; role eliminated by US head office in collective redundancy affecting the entire Swedish department"
       ]
     },
     {
