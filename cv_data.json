@@ -52,6 +52,48 @@
       "keywords": ["English - Native/Bilingual", "Georgian - Native", "Swedish - Working proficiency in reading and written communication"]
     }
   ],
+  "work": [
+    {
+      "name": "Independent",
+      "position": "Software Engineer — Python & DevOps",
+      "location": "Gothenburg",
+      "startDate": "2025-06-01",
+      "endDate": "Present",
+      "highlights": [
+        "Designing and building production-grade Python and DevOps projects end-to-end, from architecture through containerisation, CI/CD pipelines, and cloud deployment on Fly.io",
+        "Progressing through Kubernetes architecture and AWS Solutions Architect path, covering orchestration, cloud-native infrastructure patterns, and distributed systems design"
+      ]
+    },
+    {
+      "name": "NordTech Solutions",
+      "url": "https://nordtech.solutions/",
+      "position": "Technical Delivery Lead",
+      "location": "Tbilisi & Oslo",
+      "startDate": "2021-01-01",
+      "endDate": "2025-05-31",
+      "highlights": [
+        "Worked with CTO and clients to define system scope, team composition, and technical estimates; broke requirements into structured task breakdowns for delivery teams",
+        "Led QA across client platforms: applied Selenium automation selectively where test stability justified it; used manual testing for UI-heavy and context-dependent flows",
+        "Managed delivery risks, incidents, and client communications across full project lifecycles",
+        "Coordinated commercial negotiations and supported technical hiring",
+        "Travelin.ai: multi-module booking and cost reporting platform for corporate travel: delivered to production; led QA strategy, task distribution, and release coordination",
+        "Vavisjon.no: resource management monitoring platform for Norwegian municipalities: delivered to production; tasked Python/React/DevOps team, reviewed deliverables and managed delivery"
+      ]
+    },
+    {
+      "name": "TIBCO Software Inc.",
+      "url": "https://www.tibco.com/",
+      "position": "Software Support Engineer",
+      "location": "Gothenburg",
+      "startDate": "2018-04-01",
+      "endDate": "2021-01-31",
+      "highlights": [
+        "Supported enterprise multi-tier Spotfire deployments: Java/Tomcat server, .NET Node Manager services, Oracle/MSSQL backends across Windows and Linux: including clustering, load balancing, and high-memory Web Player nodes",
+        "Diagnosed complex production issues through server log analysis, local environment reproduction, and direct collaboration with the Spotfire development team in Gothenburg: covering memory leaks, SSO/Kerberos, SSL/TLS, and infrastructure misconfigurations",
+        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; progressing toward Senior SSE; role eliminated by US head office in collective redundancy affecting the entire Swedish department"
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Personal Data Platform",
@@ -75,71 +117,6 @@
       "keywords": ["Python", "Flask", "Docker", "GitHub Actions", "Gunicorn"],
       "url": "https://github.com/giorgi-dundua/nordtech-flask-site"
     }
-  ],
-  "work": [
-    {
-      "name": "Independent",
-      "position": "Software Engineer — Python & DevOps",
-      "location": "Gothenburg",
-      "startDate": "2025-06-01",
-      "endDate": "Present",
-      "highlights": [
-        "Engineered and deployed a corporate web platform in Python using Flask, multi-stage Docker builds, and Fly.io microVMs",
-        "Architected an idempotent DAG data pipeline for health telemetry utilizing SQLite, Pydantic, and GitHub Actions CI/CD",
-        "Building Kubernetes expertise through structured curriculum covering containerization, orchestration, and cloud-native patterns"
-      ]
-    },
-    {
-      "name": "NordTech Solutions",
-      "position": "Technical Delivery Lead",
-      "location": "Tbilisi & Oslo",
-      "startDate": "2021-01-01",
-      "endDate": "2025-05-31",
-      "highlights": [
-        "Worked with CTO and clients to define system scope, team composition, and technical estimates; broke requirements into structured task breakdowns for delivery teams",
-        "Led QA across client platforms — applied Selenium automation selectively where test stability justified it; used manual testing for UI-heavy and context-dependent flows",
-        "Managed delivery risks, incidents, and client communications across full project lifecycles",
-        "Coordinated commercial negotiations and supported technical hiring",
-        "Travelin.ai: multi-module booking and cost reporting platform for corporate travel — delivered to production; led QA strategy, task distribution, and release coordination",
-        "Vavisjon.no: resource management monitoring platform for Norwegian municipalities — delivered to production; tasked Python/React/DevOps team, reviewed deliverables and managed delivery"
-      ]
-    },
-    {
-      "name": "TIBCO Software Inc.",
-      "position": "Software Support Engineer",
-      "location": "Gothenburg",
-      "startDate": "2018-04-01",
-      "endDate": "2021-01-31",
-      "highlights": [
-        "Supported enterprise multi-tier Spotfire deployments: Java/Tomcat server, .NET Node Manager services, Oracle/MSSQL backends across Windows and Linux — including clustering, load balancing, and high-memory Web Player nodes",
-        "Diagnosed complex production issues through server log analysis, local environment reproduction, and direct collaboration with the Spotfire development team in Gothenburg — covering memory leaks, SSO/Kerberos, SSL/TLS, and infrastructure misconfigurations",
-        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; progressing toward Senior SSE; role eliminated by US head office in collective redundancy affecting the entire Swedish department"
-      ]
-    },
-    {
-      "name": "German Butcher LTD",
-      "position": "Freelance Software Engineer",
-      "location": "Remote (Göteborg/Tbilisi)",
-      "startDate": "2017-06-01",
-      "endDate": "2018-03-31",
-      "highlights": [
-        "Worked as a junior backend developer on a custom internal system for production, inventory, budgeting, and reporting",
-        "Implemented backend features and business logic under guidance from senior developers, gaining practical experience with real‑world enterprise workflows",
-        "Assisted with data handling and basic reporting, improving visibility into production and cost structures"
-      ]
-    },
-    {
-      "name": "Gullinbursti LTD",
-      "position": "Business Developer",
-      "location": "Remote (Göteborg/Tbilisi)",
-      "startDate": "2016-06-01",
-      "endDate": "2017-05-31",
-      "highlights": [
-        "Built and managed supplier relationships for food production inputs across the EU, focusing on cross‑border imports into Georgia",
-        "Conducted supplier research, outreach, and commercial negotiations, coordinating with freight forwarders and local manufacturers",
-        "Managed day‑to‑day operations related to deliveries, pricing, and basic financial follow‑up"
-      ] 
-    }
   ],  
   "education": [
     {
@@ -161,6 +138,28 @@
       "highlights": [
         "Studied corporate finance, financial markets, and quantitative analysis, building complementary analytical and business skills"
       ]
+    }
+  ],
+  "earlier_work": [    
+    {
+      "name": "German Butcher LTD",
+      "position": "Freelance Software Engineer",
+      "location": "Remote (Göteborg/Tbilisi)",
+      "startDate": "2017-06-01",
+      "endDate": "2018-03-31",
+      "highlights": [
+        " Junior backend developer on an internal system covering production, inventory, and reporting. Worked under senior developers on a real-world commercial codebase"
+      ]
+    },
+    {
+      "name": "Gullinbursti LTD",
+      "position": "Business Developer",
+      "location": "Remote (Göteborg/Tbilisi)",
+      "startDate": "2016-06-01",
+      "endDate": "2017-05-31",
+      "highlights": [
+        "Supplier relationships and commercial negotiations for a cross-border import operation between the EU and Georgia"
+      ] 
     }
   ]  
 }
