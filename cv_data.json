@@ -22,18 +22,13 @@
       }
     ],
     "summary": [
-      "Software Engineer with hands-on project experience in Python backend development and DevOps tooling (Docker, GitHub Actions, Fly.io), and a professional background spanning software delivery, QA, and technical support. Chalmers Software Engineering alumnus targeting backend and infrastructure roles"
+      "Software Engineer with hands-on project experience in Python backend development and DevOps tooling, and 7 years of professional background spanning software delivery, infrastructure support, and QA. Chalmers Software Engineering alumnus targeting backend and infrastructure roles"
     ]
   },
   "skills": [
     {
-      "name": "Programming & Scripting",
-      "keywords": ["Python", "SQL", "JavaScript"]
-    },
-    {
-      "name": "Web & Backend",
-      "keywords": ["Flask", "Jinja2", "RESTful APIs", "HTML5", "CSS3", "Bootstrap", "Pydantic"]
-
+      "name": "Technical Skills",
+      "keywords": ["Python", "SQL", "JavaScript", "Flask", "Jinja2", "RESTful APIs", "HTML5", "CSS3", "Bootstrap", "Pydantic"]
     },
     {
       "name": "DevOps & Infrastructure",
@@ -61,7 +56,7 @@
       "endDate": "Present",
       "highlights": [
         "Designing and building production-grade Python and DevOps projects end-to-end, from architecture through containerisation, CI/CD pipelines, and cloud deployment on Fly.io",
-        "Progressing through Kubernetes architecture and AWS Solutions Architect path, covering orchestration, cloud-native infrastructure patterns, and distributed systems design"
+        "Pursuing AWS Solutions Architect Associate certification; progressing through structured Kubernetes curriculum covering orchestration and cloud-native infrastructure patterns"
       ]
     },
     {
@@ -125,9 +120,7 @@
       "startDate": "2013",
       "endDate": "2016",
       "highlights": [
-        "Joint degree with a strong focus on long‑running industrial projects covering the full software development lifecycle",
-        "Core areas: software architecture (distributed and embedded), software quality and testing, and process improvement",
-        "Developed strong skills at the intersection of technical engineering and change management in software organisations"
+        "Joint degree covering software architecture, quality and testing, and process improvement, with emphasis on long-running industrial projects across the full development lifecycle"
       ]
     },
     {
