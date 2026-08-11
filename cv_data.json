@@ -120,7 +120,7 @@
       "highlights": [
         "Supported enterprise multi-tier Spotfire deployments: Java/Tomcat server, .NET Node Manager services, Oracle/MSSQL backends across Windows and Linux: including clustering, load balancing, and high-memory Web Player nodes",
         "Diagnosed complex production issues through server log analysis, local environment reproduction, and direct collaboration with the Spotfire development team in Gothenburg: covering memory leaks, SSO/Kerberos, SSL/TLS, and infrastructure misconfigurations",
-        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes; progressing toward Senior SSE; role eliminated by US head office in collective redundancy affecting the entire Swedish department"
+        "Authored knowledge base articles from root-cause findings and delivered infrastructure-level workarounds for issues pending engineering fixes"
       ]
     }
   ],
@@ -149,8 +149,7 @@
       "highlights": [
         "Refactored the website into a Flask application-factory and blueprint architecture, separating development and production configuration and loading runtime settings from environment variables",
         "Implemented validated contact forms with CSRF protection, reCAPTCHA, and non-blocking SMTP delivery using background threads",
-        "Containerized the application with Gunicorn on Python 3.13 slim and measured an approximately 85% image-size reduction, from 437 MB to 67.4 MB, after moving to a slim base image",
-        "Automated deployment from pushes to main through GitHub Actions and Fly.io's default rolling deployment strategy"
+        "Containerized the Flask application with Docker and Gunicorn on Python 3.13-slim, and automated deployment through GitHub Actions and Fly.io's default rolling deployment strategy"
       ],
       "keywords": [
         "Python",
@@ -174,7 +173,7 @@
     },
     {
       "institution": "School of Business, Economics and Law, University of Gothenburg",
-      "area": "MSc Finance",
+      "area": "Master of Science in Finance Programme",
       "startDate": "2008",
       "endDate": "2011",
       "highlights": [
