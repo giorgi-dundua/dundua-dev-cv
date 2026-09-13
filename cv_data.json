@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Giorgi Dundua",
-    "label": "Software Engineer (Backend/DevOps)",
+    "label": "Software Engineer - Python Backend & DevOps",
     "image": "app/static/img/profile.png",
     "email": "giorgi@dundua.dev",
     "phone": "Available upon request",
@@ -22,55 +22,62 @@
       }
     ],
     "summary": [
-      "Software Engineer with hands-on project experience in Python backend development and DevOps tooling, and 7 years of professional experience spanning software delivery, infrastructure support, and QA. Software Engineering and Management alumnus (Chalmers & University of Gothenburg) targeting backend and infrastructure roles"
+      "Software Engineer focused on Python backend, DevOps, and cloud infrastructure, with deployed Python projects and 8+ years of experience across enterprise software support, QA, technical delivery, and consulting. Software Engineering and Management alumnus of the Chalmers and University of Gothenburg programme, currently completing a programme in Python development and applied AI"
     ]
   },
   "skills": [
     {
-      "name": "Technical Skills",
+      "name": "Backend & Web",
       "keywords": [
         "Python",
-        "SQL",
         "JavaScript",
         "Flask",
         "Jinja2",
-        "RESTful APIs",
+        "REST APIs",
+        "Pydantic",
         "HTML5",
         "CSS3",
-        "Bootstrap",
-        "Pydantic"
+        "Bootstrap"
       ]
     },
     {
-      "name": "DevOps & Infrastructure",
+      "name": "Data, Databases & Visualization",
+      "keywords": [
+        "SQL",
+        "PostgreSQL",
+        "SQLite",
+        "pandas",
+        "NumPy",
+        "Pandera",
+        "Streamlit",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
       "keywords": [
         "Docker",
         "GitHub Actions",
         "CI/CD",
-        "Fly.io",
         "Linux",
-        "environment‑based configuration and secrets management"
+        "AWS (EC2, EBS, S3, IAM, CloudTrail)",
+        "Fly.io"
       ]
     },
     {
-      "name": "Data Analysis",
-      "keywords": [
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
-        "Seaborn",
-        "Plotly",
-        "Pandera"
-      ]
-    },
-    {
-      "name": "Tools & Methodologies",
+      "name": "Testing, Tools & Delivery",
       "keywords": [
         "Git",
         "GitHub",
+        "Selenium",
+        "Automated testing",
+        "Manual testing",
+        "Root-cause analysis",
         "Agile/Scrum",
-        "Teamwork",
-        "stakeholder communication"
+        "Teamwork (project management)",
+        "Stakeholder communication"
       ]
     },
     {
@@ -85,13 +92,13 @@
   "work": [
     {
       "name": "Independent",
-      "position": "Software Engineer — Python & DevOps",
+      "position": "Software Engineer & Technical Consultant",
       "location": "Gothenburg",
       "startDate": "2025-06-01",
       "endDate": "Present",
       "highlights": [
-        "Building and deploying Python and DevOps-oriented projects end to end, from architecture and testing through containerisation, deployment automation, and hosting on Fly.io",
-        "Pursuing AWS Solutions Architect Associate certification; progressing through structured Kubernetes curriculum covering orchestration and cloud-native infrastructure patterns"
+        "Build and deploy Python applications and advise clients on software architecture, infrastructure, and delivery",
+        "Selected consulting engagement: assessed an AWS-hosted production platform, developed a remediation plan covering reliability, security, cost control, and technical ownership, and coordinated specialist and vendor input"
       ]
     },
     {
@@ -163,6 +170,15 @@
   ],
   "education": [
     {
+      "institution": "Lexicon IT-Proffs",
+      "area": "System Developer - Python and AI",
+      "startDate": "September 2026",
+      "endDate": "May 2027 (expected)",
+      "highlights": [
+        "Full-time programme in Python software development and applied AI; seeking an APL placement for March-May 2027"
+      ]
+    },
+    {
       "institution": "Chalmers University of Technology & University of Gothenburg",
       "area": "Software Engineering and Management Bachelor's Programme",
       "startDate": "2013",
@@ -189,7 +205,7 @@
       "startDate": "2017-06-01",
       "endDate": "2018-03-31",
       "highlights": [
-        " Junior backend developer on an internal system covering production, inventory, and reporting. Worked under senior developers on a real-world commercial codebase"
+        "Junior backend developer on an internal system covering production, inventory, and reporting. Worked under senior developers on a real-world commercial codebase"
       ]
     },
     {
