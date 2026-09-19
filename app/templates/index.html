@@ -3,7 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ cv.basics.name }}</title>
+
+    {% set seo_title = cv.basics.name ~ " | " ~ cv.basics.label %}
+    {% set seo_description = cv.basics.name ~ " is a Gothenburg-based software engineer focused on Python backend, DevOps and cloud infrastructure. View CV, projects, skills and professional experience." %}
+
+    <!-- Search -->
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
+    <link rel="canonical" href="{{ cv.basics.url }}/">
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ seo_title }}">
+    <meta property="og:description" content="{{ seo_description }}">
+    <meta property="og:url" content="{{ cv.basics.url }}/">
+    <meta property="og:site_name" content="{{ cv.basics.name }}">
+    <meta property="og:image" content="{{ cv.basics.url }}/static/img/profile.png">
+    <meta property="og:image:alt" content="{{ cv.basics.name }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ seo_title }}">
+    <meta name="twitter:description" content="{{ seo_description }}">
+    <meta name="twitter:image" content="{{ cv.basics.url }}/static/img/profile.png">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "{{ cv.basics.url }}/",
+        "mainEntity": {
+            "@type": "Person",
+            "@id": "{{ cv.basics.url }}/#person",
+            "name": {{ cv.basics.name | tojson }},
+            "url": "{{ cv.basics.url }}/",
+            "image": "{{ cv.basics.url }}/static/img/profile.png",
+            "jobTitle": {{ cv.basics.label | tojson }},
+            "description": {{ seo_description | tojson }},
+            "sameAs": [
+                {% for profile in cv.basics.profiles %}
+                {{ profile.url | tojson }}{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ]
+        }
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/profile.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
