@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import date
 
 from flask import Flask, Response, render_template
 
@@ -21,20 +21,19 @@ def create_app():
 
         # 2. Check for Private Overrides (Local Dev Only)
         if os.path.exists(SECRETS_FILE):
+            # 2. Check for Private Overrides (Local Dev Only)
             try:
                 with open(SECRETS_FILE, "r", encoding="utf-8") as f:
                     secrets = json.load(f)
-
-                    # Apply overrides
-                    # We check if keys exist to avoid crashing on empty secrets file
-                    if "phone" in secrets:
-                        data["basics"]["phone"] = secrets["phone"]
-
-                    # Add more overrides here later (e.g. specific address)
-            except Exception as e:
+            except FileNotFoundError:
+                pass
+            except (OSError, UnicodeDecodeError, json.JSONDecodeError) as e:
                 print(f"Warning: Found secrets.json but failed to load it: {e}")
+            else:
+                if isinstance(secrets, dict) and "phone" in secrets:
+                    data["basics"]["phone"] = secrets["phone"]
 
-        return data
+            return data
 
     # --- Custom Filter for Dates ---
     @app.template_filter("format_date")
@@ -46,7 +45,7 @@ def create_app():
         # Try to parse YYYY-MM-DD
         try:
             # Returns "Mon YYYY"
-            date_obj = datetime.strptime(value, "%Y-%m-%d")
+            date_obj = date.fromisoformat(value)
             return date_obj.strftime("%b %Y")
         except (ValueError, TypeError):
             # If it's just a year "2013" or invalid, return as-is
