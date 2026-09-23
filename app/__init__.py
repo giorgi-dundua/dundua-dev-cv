@@ -72,6 +72,19 @@ def create_app():
         # Rejoin with a Non-Breaking Space (\u00A0)
         return f"{parts[0]}\u00a0{parts[1]}"
 
+    @app.after_request
+    def add_security_headers(response):
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Permissions-Policy"] = (
+            "camera=(), microphone=(), geolocation=()"
+        )
+        response.headers["Content-Security-Policy"] = (
+            "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+        )
+        return response
+
     @app.route("/")
     def index():
         cv = load_data()
