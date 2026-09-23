@@ -20,20 +20,18 @@ def create_app():
             data = json.load(f)
 
         # 2. Check for Private Overrides (Local Dev Only)
-        if os.path.exists(SECRETS_FILE):
-            # 2. Check for Private Overrides (Local Dev Only)
-            try:
-                with open(SECRETS_FILE, "r", encoding="utf-8") as f:
-                    secrets = json.load(f)
-            except FileNotFoundError:
-                pass
-            except (OSError, UnicodeDecodeError, json.JSONDecodeError) as e:
-                print(f"Warning: Found secrets.json but failed to load it: {e}")
-            else:
-                if isinstance(secrets, dict) and "phone" in secrets:
-                    data["basics"]["phone"] = secrets["phone"]
+        try:
+            with open(SECRETS_FILE, "r", encoding="utf-8") as f:
+                secrets = json.load(f)
+        except FileNotFoundError:
+            pass
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as e:
+            print(f"Warning: Found secrets.json but failed to load it: {e}")
+        else:
+            if isinstance(secrets, dict) and "phone" in secrets:
+                data["basics"]["phone"] = secrets["phone"]
 
-            return data
+        return data
 
     # --- Custom Filter for Dates ---
     @app.template_filter("format_date")
