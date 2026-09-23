@@ -12,8 +12,12 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN useradd --create-home --uid 10001 appuser
+
 # Copy the application code
-COPY . .
+COPY --chown=appuser:appuser . .
+
+USER appuser
 
 # Expose the port Fly.io expects
 EXPOSE 8080
