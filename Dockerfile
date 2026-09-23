@@ -24,4 +24,4 @@ EXPOSE 8080
 
 # Run with Gunicorn (Production Server)
 # Access the 'app' object inside 'run.py' (or create_app directly)
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "run:app"]
+CMD ["gunicorn", "--no-control-socket", "--bind", "0.0.0.0:8080", "run:app"]
